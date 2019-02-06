@@ -1,0 +1,36 @@
+CompleteShell v0.2
+
+N cpan v0.0.1 ..'Easily interact with CPAN from the command line'
+
+
+O -a ..'Creates a CPAN.pm autobundle'
+O -A ..'Shows the primary maintainers for the specified modules'
+O -c ..'Runs a `make clean` in the specified module's directories'
+O -C ..'Show the Changes files for the specified modules'
+O -D ..'Show the module details'
+O -f ..'Force the specified action'
+O -F ..'Turn off CPAN.pm's attempts to lock anything'
+O -g ..'Downloads the latest distribution of the module'
+O -h ..'Print a help message and exit'
+O -i ..'Install the specified modules'
+O -I ..'Load "local::lib"'
+O -j =file ..'Load the file that has the CPAN configuration data'
+O -J ..'Dump the configuration in the same format that CPAN.pm uses'
+O -l ..'List all installed modules with their versions'
+O -L =author... ..'List the modules by the specified authors'
+O -m ..'Make the specified modules'
+O -M =mirror...  ..'A comma-separated list of mirrors'
+O -O ..'Show the out-of-date modules'
+O -p ..'Ping the configured mirrors and print a report'
+O -P ..'Find the best mirrors'
+O -r ..'Recompiles dynamically loaded modules'
+O -s ..'Drop in the CPAN.pm shell'
+O -t ..'Run a `make test` on the specified modules'
+O -T ..'Do not test modules. Simply install them'
+O -u ..'Upgrade all installed modules'
+O -v ..'Print the script version and CPAN.pm version then exit'
+O -V ..'Print detailed information about the cpan client'
+O -x ..'Find close matches to the named modules'
+O -X ..'Dump all the namespaces to standard output'
+
+A +cpan-module...

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -eu -o pipefail
+
+input_url=https://www.cpan.org/modules/02packages.details.txt
+output_file=$COMPLETE_SHELL_CACHE/cpan
+
+echo "Fetching '02packages.details.txt' CPAN modules list."
+
+(
+  if command -v curl >/dev/null; then
+    curl -s "$input_url"
+  elif command -v wget >/dev/null; then
+    wget --quiet -O - "$input_url"
+  else
+    echo "Install error: need 'wget' or 'curl' to fetch '$input_url'"
+    exit 1
+  fi
+) |
+  tail -n+10 |
+  cut -d' ' -f1 \
+> "$output_file" &
