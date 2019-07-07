@@ -1,7 +1,7 @@
 CompleteShell v0.2
 
 N cpan v0.0.1 ..'Easily interact with CPAN from the command line'
-
+M tags perl perl5 cpan
 
 O -a ..'Creates a CPAN.pm autobundle'
 O -A ..'Shows the primary maintainers for the specified modules'
